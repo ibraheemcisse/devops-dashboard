@@ -1,4 +1,4 @@
-# 🚀 devops-pipeline-with-dashboard
+# Devops-pipeline-with-dashboard
 
 A complete CI/CD pipeline with an interactive dashboard for monitoring builds, deployments, and pipeline status.
 
