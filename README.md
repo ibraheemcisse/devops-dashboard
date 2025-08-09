@@ -16,7 +16,7 @@ A complete CI/CD pipeline implementation with real-time monitoring dashboard tha
 
 This project showcases a **production-ready CI/CD pipeline** with an interactive monitoring dashboard that displays **real metrics** from GitHub Actions. Unlike typical demo projects with static data, this dashboard fetches live pipeline statistics and build information directly from the GitHub API.
 
-⚙️ How the Dashboard Works
+## ⚙️ How the Dashboard Works
 The dashboard transforms static demo data into live pipeline monitoring through three key steps:
 
 📡 Real-Time API Integration - Fetches actual data from GitHub Actions API instead of fake metrics
