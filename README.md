@@ -8,7 +8,8 @@ A complete CI/CD pipeline implementation with real-time monitoring dashboard tha
 
 ## 📊 [**View Live Dashboard**](https://ibraheemcisse.github.io/devops-dashboard/)
 
-![Dashboard Preview](https://raw.githubusercontent.com/ibraheemcisse/devops-dashboard/blob/main/images/Capture.PNG)
+
+https://raw.githubusercontent.com/ibraheemcisse/devops-dashboard/main/images/Capture.PNG
 
 ## 🎯 Overview
 
