@@ -8,7 +8,7 @@ A complete CI/CD pipeline implementation with real-time monitoring dashboard tha
 
 ## 📊 [**View Live Dashboard**](https://ibraheemcisse.github.io/devops-dashboard/)
 
-![Dashboard Preview](https://via.placeholder.com/800x400/667eea/ffffff?text=DevOps+Dashboard+Preview)
+![Dashboard Preview](![Dashboard Preview](./images/Capture.png))
 
 ## 🎯 Overview
 
