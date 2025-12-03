@@ -2,32 +2,34 @@ name: DevOps Pipeline
 
 on:
   push:
-    branches: [ main, develop ]
+    branches: [main, develop]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   build-and-test:
-    runs-on: ubuntu-latest
-    
+    runs-on: tenki-standard-autoscale
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
-    
+
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v3
-    
+
     - name: Run tests
       run: |
         chmod +x scripts/run-tests.sh
         ./scripts/run-tests.sh
-    
+
+
     - name: Build dashboard
       run: |
         cd my-app
         docker build -t devops-dashboard:${{ github.sha }} .
         docker build -t devops-dashboard:latest .
-    
+
+
     - name: Test dashboard
       run: |
         docker run -d -p 8080:80 --name dashboard-test devops-dashboard:latest
@@ -35,7 +37,8 @@ jobs:
         curl -f http://localhost:8080 || exit 1
         docker stop dashboard-test
         docker rm dashboard-test
-    
+
+
     - name: Deploy (if main branch)
       if: github.ref == 'refs/heads/main'
       run: |
